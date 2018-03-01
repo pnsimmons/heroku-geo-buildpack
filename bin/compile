@@ -98,7 +98,7 @@ for dir in $VENDORED_GEOS $VENDORED_GDAL $VENDORED_PROJ; do
 done
 
 # App directories
-APP_VENDOR="/app/$TARGET_VENDOR_DIR"
+APP_VENDOR="$BUILD_DIR/$TARGET_VENDOR_DIR"
 
 # Setup environment variables
 set-env GEOS_LIBRARY_PATH "$APP_VENDOR/lib/libgeos_c.so"
